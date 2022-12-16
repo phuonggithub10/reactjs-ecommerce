@@ -9,20 +9,23 @@ import useStyles from './styles'
 //     { id: 3, name: 'Phone', description: 'Mobile Galaxy.', price: '$125', image: 'https://t-mobile.scene7.com/is/image/Tmusprod/2683701-FG_Samsung_Galaxy-Z-Fold4_nologo-4?wid=750&hei=750&fmt=png-alpha' }
 // ]
 
-const Products = ({ products }) => {
+const Products = ({ products, onAddToCart }) => {
     const classes = useStyles();
+
+    if (!products.length) return <p>Loading...</p>;
+
     return (
         <main className={classes.content}>
-            <div className={classes.toolbar}></div>
+            <div className={classes.toolbar} />
             <Grid container justifyContent="center" spacing={4}>
                 {products.map((product) => (
                     <Grid key={product.id} item xs={12} sm={6} md={4} lg={3}>
-                        <Product product={product} />
+                        <Product product={product} onAddToCart={onAddToCart} />
                     </Grid>
                 ))}
             </Grid>
         </main>
-    )
-}
+    );
+};
 
 export default Products
