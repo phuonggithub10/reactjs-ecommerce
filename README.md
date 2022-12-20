@@ -4,11 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-For Database Open [](https://dashboard.chec.io) to view it in your browser.
+For Database Open [chec](https://dashboard.chec.io) to view it in your browser.
 
-For Payment Open [](https://dashboard.stripe.com/) to view it in your browser.
+For Payment Open [stripe](https://dashboard.stripe.com/) to view it in your browser.
 
-For Deploy Web [](https://app.netlify.com/) to view it in your browser.
+For Deploy Web [netlify](https://app.netlify.com/) to view it in your browser.
 
 In the project directory, you can run:
 
